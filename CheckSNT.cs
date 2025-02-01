@@ -10,8 +10,12 @@ namespace ViDu
     {
         public static bool SNT(out int n)
         {
-            Console.Write("Nhap vao n: ");
-            n=int.Parse(Console.ReadLine());
+            do
+            {
+                Console.Write("Nhap vao n: ");
+                n = int.Parse(Console.ReadLine());
+            } while (n < 0);
+
             for(int i = 2; i<= n/2; i ++)
             {
                 if(n%i==0)

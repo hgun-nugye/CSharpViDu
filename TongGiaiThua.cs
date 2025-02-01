@@ -11,9 +11,12 @@ namespace ViDu
         static void Main(string[] args)
         {
             int n;
-            Console.Write("Nhap vao n: ");
-            n = int.Parse(Console.ReadLine());
-            int sum = 0;
+            do
+            {
+                Console.Write("Nhap vao n: ");
+                n = int.Parse(Console.ReadLine());
+            } while (n < 1);
+            long sum = 0;
             int tg = 1;
             for (int i = 1; i <= n; i++)
             {

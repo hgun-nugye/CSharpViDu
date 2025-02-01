@@ -9,15 +9,15 @@
 
   <ItemGroup>
     <Compile Remove="CheckQuyTrongNam.cs" />
+    <Compile Remove="CheckSNT.cs" />
     <Compile Remove="PTBac2.cs" />
     <Compile Remove="SoHoanHao.cs" />
-    <Compile Remove="TongGiaiThua.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="CheckQuyTrongNam.cs" />
+    <None Include="CheckSNT.cs" />
     <None Include="SoHoanHao.cs" />
-    <None Include="TongGiaiThua.cs" />
     <None Include="PTBac2.cs" />
   </ItemGroup>
 
