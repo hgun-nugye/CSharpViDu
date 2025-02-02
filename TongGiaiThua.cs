@@ -22,9 +22,9 @@ namespace ViDu
             {
                 tg *= i;
                 sum += tg;
-                
+
             }
-            Console.WriteLine("Tong giai thua la " +sum);
+            Console.WriteLine("Tong giai thua la " + sum);
         }
     }
 }

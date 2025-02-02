@@ -8,17 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Char.cs" />
     <Compile Remove="CheckQuyTrongNam.cs" />
     <Compile Remove="CheckSNT.cs" />
     <Compile Remove="PTBac2.cs" />
+    <Compile Remove="Random_DateTime.cs" />
     <Compile Remove="SoHoanHao.cs" />
+    <Compile Remove="TongGiaiThua.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Char.cs" />
     <None Include="CheckQuyTrongNam.cs" />
     <None Include="CheckSNT.cs" />
+    <None Include="Random_DateTime.cs" />
     <None Include="SoHoanHao.cs" />
     <None Include="PTBac2.cs" />
+    <None Include="TongGiaiThua.cs" />
   </ItemGroup>
 
 </Project>
