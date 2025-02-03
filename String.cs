@@ -112,11 +112,59 @@ namespace ViDu
 
             //Hàm string.Insert
             string chuoigoc1 = "\nBun ";
-            string chuoigoc2 = "rieu";
+            string chuoigoc2 = "rieuu";
             chuoigoc1 = chuoigoc1.Insert(5, chuoigoc2);
             //5 là vị trí bắt đầu chèn chuỗi chuoigoc2 vào sau chuoigoc1
             //Nếu vị trí chèn là 1 thì chuỗi mới sẽ là "\nrieuBun ", tức là không bị mất kí tự 
             Console.WriteLine(chuoigoc1);
+
+            //IndexOf(ch) -> trả về vị trí xuất hiện đầu tiên của kí tự ch
+            int index1 = chuoigoc1.IndexOf('u');
+            Console.WriteLine(index1);
+
+            //LastIndexOf(ch) -> trả về vị trí xuất hiện cuối cùng của kí tự ch
+            int index2 = chuoigoc2.LastIndexOf('u');
+            Console.WriteLine(index2);
+
+            //Remove(index, count) -> index là vị trí bắt đầu xóa, count là số lượng kí tự muốn xóa
+            chuoigoc1 = chuoigoc1.Remove(4, 1);
+            Console.WriteLine(chuoigoc1);
+
+            //Replace("str old", "str new") -> str old là chuỗi cũ muốn đổi, str new là chuỗi mới muốn thay thế
+            chuoigoc2 = chuoigoc2.Replace("uu", "u");
+            Console.WriteLine(chuoigoc2);
+
+            //bool StartsWith("str") -> kiểm tra xem chuỗi có bắt đầu bằng chuỗi str không
+            bool kiemtra = chuoigoc1.StartsWith("\n");
+            Console.WriteLine(kiemtra);
+
+            //Substring(start inex, count) -> tách chuỗi con từ chuỗi cha
+            string momstr = "Hom nay la thu bay";
+            string sonstr;
+            sonstr = momstr.Substring(11, 7);
+            Console.WriteLine(momstr);
+            Console.WriteLine(sonstr);
+
+            //ToLower(); ToUpper() -> chuyển chuỗi sang chuỗi thường/chuỗi hoa
+            Console.WriteLine(chuoigoc1.ToLower());
+            Console.WriteLine(chuoigoc2.ToUpper());
+
+            //Trim() -> xóa toàn bộ khoảng trắng ở đầu và cuối chuỗi
+            string chuoitrang = "    \nYeu   la tha    thu    ";
+            Console.WriteLine(chuoitrang.Trim());
+            //Tương tự có TrimEnd() - xóa đầu và TrimStart() - xóa cuối
+
+            //Split(char) -> tách chuỗi thông qua kí tự char
+            string chuoitach2 = "onw,two,three";
+            Console.WriteLine( chuoitach2);
+            string[] tachchuoi = chuoitach2.Split(',');
+            Console.WriteLine(tachchuoi[0]);
+            Console.WriteLine(tachchuoi[1]);
+            Console.WriteLine(tachchuoi[tachchuoi.Length-1]);
+
+            //string.Join(char) -> nối chuỗi có thêm dấu char
+            string noichuoi = string.Join('.',tachchuoi);
+            Console.WriteLine(noichuoi);
         }
     }
 }

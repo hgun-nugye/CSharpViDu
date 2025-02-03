@@ -14,6 +14,7 @@
     <Compile Remove="PTBac2.cs" />
     <Compile Remove="Random_DateTime.cs" />
     <Compile Remove="SoHoanHao.cs" />
+    <Compile Remove="String.cs" />
     <Compile Remove="TongGiaiThua.cs" />
   </ItemGroup>
 
@@ -24,6 +25,7 @@
     <None Include="Random_DateTime.cs" />
     <None Include="SoHoanHao.cs" />
     <None Include="PTBac2.cs" />
+    <None Include="String.cs" />
     <None Include="TongGiaiThua.cs" />
   </ItemGroup>
 
