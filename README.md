@@ -5,9 +5,10 @@ Cho:
  	2. tính trung bình cộng 
   
 **Bài tập 2:**
-1. Viết chương trình kiểm tra tính hợp lệ của mật khẩu: aaaaaAAAAAA1
+1. Viết chương trình kiểm tra tính hợp lệ của mật khẩu:
   * mật khẩu hợp lệ khi có ít nhất 6 ký tự chứa ít nhất 1 chữ cái ( chữ cái thường hoặc hoa đều được) 
-  * chứa ít nhất 1 chữ số 
+  * chứa ít nhất 1 chữ số
+  * sai định dạng thì nhập lại đến khi đúng
 2. cho người dùng nhập vào mật khẩu để login / so sánh, nếu đúng mở của, sai quá 5 lần khóa đăng nhập, thoát chương trình
 
 **Bài tập 3:**
