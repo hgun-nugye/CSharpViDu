@@ -16,88 +16,122 @@ namespace ViDu
         public static void BaiTap1()
         {
             string str1 = "English = 78 Science = 83 Math = 68 History = 65";
-            int demSo = 0;
+            string[] lst = str1.Split(' ');
+            string so ="";
             int sum = 0;
-            for(int i=0; i<str1.Length; i++)
+            foreach(string s in lst)
             {
-                if (Char.IsDigit(str1[i]))
+                foreach(char c in s)
                 {
-                    demSo++;
-                    sum += str1[i];
+                    if(Char.IsDigit(c))
+                    {
+                        so += s + " ";
+                        break;
+                    }
                 }
             }
-            float TBC = (float) sum/demSo;
+            so = so.Trim();
+            string[] lst2 = so.Split(" ");
+            foreach(string num in lst2)
+            {
+                sum += int.Parse(num);
+            }
+            float TBC = (float) sum/lst2.Length;
             Console.WriteLine("Gia tri trung binh cong cua cac so trong chuoi la " +TBC);
         }
 
-        /* 1. Viết chương trình kiểm tra tính hợp lệ của mật khẩu: aaaaaAAAAAA1
-          *  mật khẩu hợp lệ khi có ít nhất 6 ký tự chứa ít nhất 1 chữ cái ( chữ cái thường hoặc hoa đều được) 
-          *chứa ít nhất 1 chữ số 
+        /* 
+         1. Viết chương trình kiểm tra tính hợp lệ của mật khẩu:
+          * mật khẩu hợp lệ khi có ít nhất 6 ký tự chứa ít nhất 1 chữ cái ( chữ cái thường hoặc hoa đều được) 
+          * chứa ít nhất 1 chữ số 
+          * nhập lại đến khi hợp lệ
          2. Cho người dùng nhập vào mật khẩu để login / so sánh, nếu đúng mở của, sai quá 5 lần khóa đăng nhập, thoát chương trình
         */
-        public static void BaiTap2_1()
+        public static void BaiTap2()
         {
-            string password = "aaaaaAAAAAA1";
-            int chucai = 0;
-            int chuso = 0;
-            for (int i = 0; i < password.Length; i++)
+            // xử lí phần 1
+            bool check = true;
+
+            Console.WriteLine("\nVui long nhap vao mat khau: ");
+            string password = Console.ReadLine();
+
+            while (check)
             {
-                if (password.Length < 6)
+                int demChucai = 0;
+                int demChuso = 0;
+                foreach (char c in password)
                 {
+
+                    if (Char.IsDigit(c))
+                    {
+                        demChuso++;
+                    }
+                    if (Char.IsLetter(c))
+                    {
+                        demChucai++;
+                    }
+                }
+                    if (demChucai*demChuso!=0 && password.Length>=6)
+                    {
+                        check=false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Vui long nhap lai mat khau: ");
+                        password = Console.ReadLine();
+                        check = true;
+                    }
+            }
+            Console.WriteLine("Da nhap mat khau thanh cong!");
+
+            //xử lí phần 2
+
+            Console.WriteLine("\nNhap vao mat khau de dang nhap: ");
+            string login = Console.ReadLine();
+            int demLogin = 0;
+
+            while(true)
+            {
+                bool ketqua = password.Equals(login);
+                if(ketqua)
+                {
+                    Console.WriteLine("Dang nhap thanh cong");
                     break;
                 }
                 else
                 {
-                    if (Char.IsDigit(password[i]))
+                    demLogin++;
+                    if (demLogin < 5)
                     {
-                        chuso++;
+                        Console.WriteLine("Nhap lai mat khau de dang nhap, nhap sai {0}/5 lan: ", demLogin);
+                        login = Console.ReadLine();
                     }
-                    else if (Char.IsLetter(password[i]))
+                    else
                     {
-                        chucai++;
+                        Console.WriteLine("Ban da nhap mat khau sai 5 lan, khoa dang nhap");
+                        break;
                     }
+
                 }
             }
-            if (chucai >= 1 && chuso >= 1) Console.WriteLine("\nMat khau hop le.");
-            else Console.WriteLine("\nMat khau khong hop le.");
         }
-        public static void BaiTap2_2(out string matkhau)
-        {
-            string password = "DayLaMatKhau@123";
-            matkhau ="";
-            int count = 0;
-            do
-            {
-                if (count == 5)
-                {
-                Console.WriteLine("Qua so lan nhap mat khau, vui long nhap lai sau!");
-                break;
-                }
 
-                Console.WriteLine("\nNhap vao mat khau de dang nhap: ");
-                matkhau = Console.ReadLine();
-                count++;
-
-                if(matkhau.CompareTo(password) == 0)
-                    Console.WriteLine("Da nhap mat khau thanh cong");
-            } while (matkhau.CompareTo(password) != 0);
-
-        }
         /* Viết chương trình chuyển tin nhắn sang mật mã theo bảng : 	
          #a="abcdefghijklmnopqrstuvwxyz"   
 	     #b="zxcvbnmasdfghjklqwertyuiop“  */
-        public static void BaiTap3(out string message)
+        public static void BaiTap3()
         {
             string de = "abcdefghijklmnopqrstuvwxyz";
             string en = "zxcvbnmasdfghjklqwertyuiop";
+
             Console.WriteLine("\nNhap vao noi dung tin nhan de ma hoa: ");
-            message = Console.ReadLine();
-            string en_message = "";
+            string message = Console.ReadLine();
+            string encode_message ="";
             for (int i = 0; i < message.Length; i++)
             {
                 if(!char.IsLower(message[i]))
                 {
-                    en_message += message[i];
+                    encode_message += message[i];
                 }
                 else
                 {
@@ -105,12 +139,12 @@ namespace ViDu
                     {
                         if (message[i].CompareTo(de[j]) == 0)
                         {
-                            en_message += en[j];
+                            encode_message += en[j];
                         }
                     }
                 }
             }
-            Console.WriteLine("Noi dung tin nhan sau khi duoc ma hoa la: " + en_message);
+            Console.WriteLine("Noi dung tin nhan sau khi duoc ma hoa la: " + encode_message);
         }
         /* Cho chuỗi : 
 	        a= “
@@ -118,17 +152,21 @@ namespace ViDu
 	        tôi chịu khó
 	        tôi đẹp zai
 	        “
-	        đếm từ tôi trong string a trên
+	        đếm từ "toi" trong string a trên
         */
         public static void BaiTap4()
         {
-            string a = "toi cham hoc toi chiu kho toi dep zai";
+            string a = @"
+                        toi cham hoc 
+                        toi chiu kho 
+                        toi dep zai
+                        ";
             string check = "toi";
             int dem = 0;
             string[] tach = a.Split(' ');
-            for (int i = 0; i < tach.Length; i++)
+            foreach(string s in tach)
             {
-                if (tach[i].Contains(check))
+                if (s.Contains(check))
                 {
                     dem++;
                 }
@@ -138,22 +176,34 @@ namespace ViDu
         /* Viết chương trình tách số và chữ từ chuỗi nhập vào thành 2 chuỗi : 	
              * ví dụ nhập vào : abc123 sẽ tách và in ra thành 2 chuỗi abc và 123
         */
-        public static void BaiTap5(out string input)
+        public static void BaiTap5()
         {
             string output_so="";
             string output_chu="";
             Console.WriteLine("\nNhap vao chuoi: ");
-            input = Console.ReadLine();
+            string input = Console.ReadLine();
 
-            foreach (char i in input)
+            for (int i=0; i<input.Length; i++)
             {
-                if (char.IsDigit(i))
+                int j = i;
+                if (char.IsDigit(input[i]))
                 {
-                    output_so += i;
+                    output_so += input[i];                     
+                }                
+                else if (char.IsLetter(input[i]))
+                {
+                    output_chu += input[i];
                 }
-                else if (char.IsLetter(i))
+                if (i < input.Length - 1 && char.IsWhiteSpace(input[i]))
                 {
-                    output_chu += i;
+                    if (char.IsDigit(input[i + 1]))
+                    {
+                        output_so += " ";
+                    }
+                    else if (char.IsLetter(input[i + 1]))
+                    {
+                        output_chu += " ";
+                    }
                 }
             }
             Console.WriteLine("Chuoi sau khi da tach chu cai va so la: ");
@@ -163,14 +213,10 @@ namespace ViDu
         static void Main(string[] args)
         {
             BaiTap1();
-            BaiTap2_1();
-            string matkhau;
-            BaiTap2_2(out matkhau);
-            string message;
-            BaiTap3(out message);
+            BaiTap2();
+            BaiTap3();
             BaiTap4();
-            string input;
-            BaiTap5(out input);
+            BaiTap5();
         }
     }
 }
