@@ -15,6 +15,7 @@ Cho:
 
 **Bài tập 3:**
 Viết chương trình chuyển tin nhắn sang mật mã theo bảng : 	
+
 #a="abcdefghijklmnopqrstuvwxyz"   
 #b="zxcvbnmasdfghjklqwertyuiop“  
 
