@@ -1,4 +1,4 @@
-**BÀI TẬP VỚI STRING**
+# **BÀI TẬP VỚI STRING**
 
 **Bài tập 1:**
 
@@ -26,16 +26,17 @@ Viết chương trình chuyển tin nhắn sang mật mã theo bảng :
 
 Cho chuỗi : 
 
-	a= “
+	a= "
  
 	tôi chăm học
  
 	tôi chịu khó
  
 	tôi đẹp zai
- 
-	“
-	đếm từ tôi trong string a trên
+
+ 	"
+  
+	đếm từ "tôi" trong string a trên
 
 **Bài tập 5:**
 
@@ -44,7 +45,7 @@ Viết chương trình tách số và chữ từ chuỗi nhập vào thành 2 ch
      
 
 
-**BÀI TẬP VỚI LIST**
+# **BÀI TẬP VỚI LIST**
 
 **Bài tập 1:**
 
@@ -82,7 +83,7 @@ Viết chương trình:
 
 **ví dụ** list = {1,2,3,4,5}
 
-# số lớn thứ 2: 4, vị trí index trong list là 3
+- số lớn thứ 2: 4, vị trí index trong list là 3
 
-# số nhỏ thứ 2 trong list là 2, vị trí index trong list là 1
+- số nhỏ thứ 2 trong list là 2, vị trí index trong list là 1
 
