@@ -43,6 +43,7 @@ Viết chương trình tách số và chữ từ chuỗi nhập vào thành 2 ch
      * ví dụ nhập vào : abc123 sẽ tách và in ra thành 2 chuỗi abc và 123
      
 
+
 **BÀI TẬP VỚI LIST**
 
 **Bài tập 1:**
@@ -55,7 +56,7 @@ Viết chương trình nhập vào 1 danh sách list sau đó:
 
 1. tạo ra 1 list mới bình phương các phần từ
 
-2.Xác định bao nhiêu phần tử lớn hơn 50
+2. Xác định bao nhiêu phần tử lớn hơn 50
 
 **Bài tập 3:**
 
