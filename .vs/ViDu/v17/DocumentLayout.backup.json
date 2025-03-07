@@ -1,0 +1,97 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\STUDY\\CODE\\OOPc\\ViDu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E55692D0-8234-459F-8AFF-0346E2285EDF}|ViDu.csproj|d:\\study\\code\\oopc\\vidu\\baitaplist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E55692D0-8234-459F-8AFF-0346E2285EDF}|ViDu.csproj|solutionrelative:baitaplist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E55692D0-8234-459F-8AFF-0346E2285EDF}|ViDu.csproj|d:\\study\\code\\oopc\\vidu\\list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E55692D0-8234-459F-8AFF-0346E2285EDF}|ViDu.csproj|solutionrelative:list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E55692D0-8234-459F-8AFF-0346E2285EDF}|ViDu.csproj|d:\\study\\code\\oopc\\vidu\\string.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E55692D0-8234-459F-8AFF-0346E2285EDF}|ViDu.csproj|solutionrelative:string.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E55692D0-8234-459F-8AFF-0346E2285EDF}|ViDu.csproj|d:\\study\\code\\oopc\\vidu\\mang2chieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E55692D0-8234-459F-8AFF-0346E2285EDF}|ViDu.csproj|solutionrelative:mang2chieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaiTapList.cs",
+              "DocumentMoniker": "D:\\STUDY\\CODE\\OOPc\\ViDu\\BaiTapList.cs",
+              "RelativeDocumentMoniker": "BaiTapList.cs",
+              "ToolTip": "D:\\STUDY\\CODE\\OOPc\\ViDu\\BaiTapList.cs",
+              "RelativeToolTip": "BaiTapList.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAADgv0wAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T13:41:52.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "List.cs",
+              "DocumentMoniker": "D:\\STUDY\\CODE\\OOPc\\ViDu\\List.cs",
+              "RelativeDocumentMoniker": "List.cs",
+              "ToolTip": "D:\\STUDY\\CODE\\OOPc\\ViDu\\List.cs",
+              "RelativeToolTip": "List.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAQwK8AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T12:33:05.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "String.cs",
+              "DocumentMoniker": "D:\\STUDY\\CODE\\OOPc\\ViDu\\String.cs",
+              "RelativeDocumentMoniker": "String.cs",
+              "ToolTip": "D:\\STUDY\\CODE\\OOPc\\ViDu\\String.cs",
+              "RelativeToolTip": "String.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T13:58:43.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Mang2Chieu.cs",
+              "DocumentMoniker": "D:\\STUDY\\CODE\\OOPc\\ViDu\\Mang2Chieu.cs",
+              "RelativeDocumentMoniker": "Mang2Chieu.cs",
+              "ToolTip": "D:\\STUDY\\CODE\\OOPc\\ViDu\\Mang2Chieu.cs",
+              "RelativeToolTip": "Mang2Chieu.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAqwC4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T12:11:22.088Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

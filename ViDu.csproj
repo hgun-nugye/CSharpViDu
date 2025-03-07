@@ -8,11 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="BaiTapList.cs" />
+    <Compile Remove="BaiTapMang1Chieu.cs" />
     <Compile Remove="BaiTapString.cs" />
     <Compile Remove="Char.cs" />
     <Compile Remove="CheckQuyTrongNam.cs" />
     <Compile Remove="CheckSNT.cs" />
-    <Compile Remove="Mang1Chieu.cs" />
+    <Compile Remove="List.cs" />
+    <Compile Remove="Mang2Chieu.cs" />
     <Compile Remove="PTBac2.cs" />
     <Compile Remove="Random_DateTime.cs" />
     <Compile Remove="SoHoanHao.cs" />
@@ -21,11 +24,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="BaiTapList.cs" />
+    <None Include="BaiTapMang1Chieu.cs" />
     <None Include="BaiTapString.cs" />
     <None Include="Char.cs" />
     <None Include="CheckQuyTrongNam.cs" />
     <None Include="CheckSNT.cs" />
-    <None Include="Mang1Chieu.cs" />
+    <None Include="List.cs" />
+    <None Include="Mang2Chieu.cs" />
     <None Include="Random_DateTime.cs" />
     <None Include="SoHoanHao.cs" />
     <None Include="PTBac2.cs" />

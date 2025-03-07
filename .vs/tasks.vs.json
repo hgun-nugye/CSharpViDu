@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-PTBac2",
+      "appliesTo": "PTBac2.cs",
+      "type": "launch"
+    }
+  ]
+}

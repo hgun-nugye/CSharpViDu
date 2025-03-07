@@ -1,0 +1,14 @@
+D:\STUDY\CODE\OOPc\GiaiPTBac2\bin\Debug\net8.0\GiaiPTBac2.exe
+D:\STUDY\CODE\OOPc\GiaiPTBac2\bin\Debug\net8.0\GiaiPTBac2.deps.json
+D:\STUDY\CODE\OOPc\GiaiPTBac2\bin\Debug\net8.0\GiaiPTBac2.runtimeconfig.json
+D:\STUDY\CODE\OOPc\GiaiPTBac2\bin\Debug\net8.0\GiaiPTBac2.dll
+D:\STUDY\CODE\OOPc\GiaiPTBac2\bin\Debug\net8.0\GiaiPTBac2.pdb
+D:\STUDY\CODE\OOPc\GiaiPTBac2\obj\Debug\net8.0\GiaiPTBac2.GeneratedMSBuildEditorConfig.editorconfig
+D:\STUDY\CODE\OOPc\GiaiPTBac2\obj\Debug\net8.0\GiaiPTBac2.AssemblyInfoInputs.cache
+D:\STUDY\CODE\OOPc\GiaiPTBac2\obj\Debug\net8.0\GiaiPTBac2.AssemblyInfo.cs
+D:\STUDY\CODE\OOPc\GiaiPTBac2\obj\Debug\net8.0\GiaiPTBac2.csproj.CoreCompileInputs.cache
+D:\STUDY\CODE\OOPc\GiaiPTBac2\obj\Debug\net8.0\GiaiPTBac2.dll
+D:\STUDY\CODE\OOPc\GiaiPTBac2\obj\Debug\net8.0\refint\GiaiPTBac2.dll
+D:\STUDY\CODE\OOPc\GiaiPTBac2\obj\Debug\net8.0\GiaiPTBac2.pdb
+D:\STUDY\CODE\OOPc\GiaiPTBac2\obj\Debug\net8.0\GiaiPTBac2.genruntimeconfig.cache
+D:\STUDY\CODE\OOPc\GiaiPTBac2\obj\Debug\net8.0\ref\GiaiPTBac2.dll
